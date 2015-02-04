@@ -35,6 +35,18 @@ TEST(Collatz, read) {
     ASSERT_EQ( 1, p.first);
     ASSERT_EQ(10, p.second);}
 
+TEST(Collatz, read) {
+    string s("0 99999999999999999999");
+    CONST PAIR<int, int> p = collatz_read(s);
+    ASSERT_EQ(0, p.first);
+    ASSERT_EQ(99999999999999999999, p.second);}
+
+TEST(Collatz, read) {
+    string s("123456789 123456789");
+    CONST PAIR<int, int> p = collatz_read(s);
+    ASSERT_EQ(123456789, p.first);
+    ASSERT_EQ(123456789, p.second);}
+
 // ----
 // eval
 // ----
@@ -63,6 +75,16 @@ TEST(Collatz, print) {
     ostringstream w;
     collatz_print(w, 1, 10, 20);
     ASSERT_EQ("1 10 20\n", w.str());}
+
+TEST(Collatz, print) {
+    ostringstream w;
+    collatz_print(w, 1, 9, 21);
+    ASSERT_EQ("1 9 21\n", w.str());}
+
+TEST(Collatz, print) {
+    ostringstream w;
+    collatz_print(w, 1, 8, 22);
+    ASSERT_EQ("1 8 22\n", w.str());}
 
 // -----
 // solve
