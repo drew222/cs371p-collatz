@@ -38,7 +38,13 @@ int collatz_eval (int i, int j) {
     assert (i >= 0);
     int count = 1;
     int largestCount = 1;
-    for (int k = i; k < j; k++){
+    int max = j;
+    int min = i;
+    if (j < i){
+        max = i;
+        min = j;
+    }
+    for (int k = min; k < max; k++){
         int theNum = k;
         while (theNum != 1){
             if (theNum % 2 == 0){
