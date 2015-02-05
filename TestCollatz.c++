@@ -37,13 +37,13 @@ TEST(Collatz, read1) {
 
 TEST(Collatz, read2) {
     string s("0 999999");
-    CONST PAIR<int, int> p = collatz_read(s);
+    const pair<int, int> p = collatz_read(s);
     ASSERT_EQ(0, p.first);
     ASSERT_EQ(999999, p.second);}
 
 TEST(Collatz, read3) {
     string s("123456789 123456789");
-    CONST PAIR<int, int> p = collatz_read(s);
+    const pair<int, int> p = collatz_read(s);
     ASSERT_EQ(123456789, p.first);
     ASSERT_EQ(123456789, p.second);}
 
