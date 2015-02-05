@@ -1,3 +1,99 @@
+commit 6c8a6d3ccc15a134fa5ed54889365eb49b0f98ee
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 17:03:49 2015 -0600
+
+    cache works this time
+
+commit 062109bb6fdff988fcecacc27eaeb0750208d25b
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 16:37:23 2015 -0600
+
+    cache accepted by sphere
+
+commit a09d19e8cb933f5ddac0e4f34c8ea6dd5945b84c
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 16:20:25 2015 -0600
+
+    added cache
+
+commit cdf8f1b1a2e6fdd10e1694e7492d97cbebae7180
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 14:23:29 2015 -0600
+
+    changed TestCollatz.out
+
+commit dec7a4d14e9f12d2cec5eb4ce68fb9c7efe18117
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 13:56:42 2015 -0600
+
+    updated collate to be the same as sphere
+
+commit 4f3e6b75c348261770981e72c75f3b910f8473ad
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 13:55:02 2015 -0600
+
+    updated RunCollatz files
+
+commit 0aeda6e449dc43e447ac31622df9da5b962c4eca
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 12:35:17 2015 -0600
+
+    updated collate to sphere
+
+commit 04ad46c4577f4799577c8a84be5046532a1aba38
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 12:34:24 2015 -0600
+
+    works with ranges in opposite order, accepted
+
+commit 91e5262c1006f8006df23d1ed63e3cfd11f42f01
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 11:59:18 2015 -0600
+
+    added assertions
+
+commit 33af77fe169c241a31708793767bac4f3bfa904c
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 00:16:33 2015 -0600
+
+    4.8 gcc
+
+commit 5accab03ebfed304d04550f0c68321ba61dcb253
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 00:14:23 2015 -0600
+
+    fixed compile error
+
+commit 86b1c049ffbf81ddab34d2fd529adec61f5258b2
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Thu Feb 5 00:10:04 2015 -0600
+
+    fixed tests and eval function
+
+commit f2c9258884a3746cb34325480df4cea55f7f2089
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Wed Feb 4 23:33:58 2015 -0600
+
+    added 1 test
+
+commit a6c63ace5ab613e80034bb38874e9ff497bcf298
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Wed Feb 4 22:42:51 2015 -0600
+
+    first working version
+
+commit 6a8224a5421839164dc201f0ba086f3fe44508c9
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Wed Feb 4 16:49:50 2015 -0600
+
+    added more tests 3+ average per function
+
+commit 8851c734f986728c717db2de2a48e9182f0f5bed
+Author: Drew Zoellner <andrewzoellner@hotmail.com>
+Date:   Wed Feb 4 16:43:32 2015 -0600
+
+    tests now fail
+
 commit 99be8418a4580cc33fd78a3d0396f9e36d464ef4
 Author: Drew Zoellner <andrewzoellner@hotmail.com>
 Date:   Wed Feb 4 12:37:31 2015 -0600
