@@ -29,19 +29,19 @@ using namespace std;
 // read
 // ----
 
-TEST(Collatz, read) {
+TEST(Collatz, read1) {
     string s("1 10\n");
     const pair<int, int> p = collatz_read(s);
     ASSERT_EQ( 1, p.first);
     ASSERT_EQ(10, p.second);}
 
-TEST(Collatz, read) {
-    string s("0 99999999999999999999");
+TEST(Collatz, read2) {
+    string s("0 999999");
     CONST PAIR<int, int> p = collatz_read(s);
     ASSERT_EQ(0, p.first);
-    ASSERT_EQ(99999999999999999999, p.second);}
+    ASSERT_EQ(999999, p.second);}
 
-TEST(Collatz, read) {
+TEST(Collatz, read3) {
     string s("123456789 123456789");
     CONST PAIR<int, int> p = collatz_read(s);
     ASSERT_EQ(123456789, p.first);
@@ -75,17 +75,17 @@ TEST(Collatz, eval_5) {
 // print
 // -----
 
-TEST(Collatz, print) {
+TEST(Collatz, print1) {
     ostringstream w;
     collatz_print(w, 1, 10, 20);
     ASSERT_EQ("1 10 20\n", w.str());}
 
-TEST(Collatz, print) {
+TEST(Collatz, print2) {
     ostringstream w;
     collatz_print(w, 1, 9, 21);
     ASSERT_EQ("1 9 21\n", w.str());}
 
-TEST(Collatz, print) {
+TEST(Collatz, print3) {
     ostringstream w;
     collatz_print(w, 1, 8, 22);
     ASSERT_EQ("1 8 22\n", w.str());}
