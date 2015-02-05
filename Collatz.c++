@@ -44,7 +44,10 @@ int collatz_eval (int i, int j) {
         max = i;
         min = j;
     }
-    for (int k = min; k < max; k++){
+    if(min == 0){
+        min++;
+    }
+    for (int k = min; k <= max; k++){
         int theNum = k;
         while (theNum != 1){
             if (theNum % 2 == 0){
