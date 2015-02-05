@@ -34,7 +34,7 @@ pair<int, int> collatz_read (const string& s) {
 // ------------
 
 int collatz_eval (int i, int j) {
-    //no negative values!
+    ///no negative values!
     assert (i >= 0);
     assert (j >= 0);
     int* cache = new int[1000000];
@@ -42,7 +42,7 @@ int collatz_eval (int i, int j) {
     int largestCount = 1;
     int max = j;
     int min = i;
-    //put numbers in correct order / check for error cases
+    ///put numbers in correct order / check for error cases
     if (j < i){
         max = i;
         min = j;
@@ -52,13 +52,13 @@ int collatz_eval (int i, int j) {
         }
         min++;
     }
-    //loop through all numbers in the range
+    ///loop through all numbers in the range
     for (int k = min; k <= max; k++){
         int theNum = k;
         bool haventFound = true;
-        //keep going until you found cachedValue or get to 1
+        ///keep going until you found cachedValue or get to 1
         while (theNum > 1 && haventFound){
-            //did you find a cached value?
+            ///did you find a cached value?
             if(theNum > 0 && theNum < 1000000 && cache[theNum] != 0){
                 count += cache[theNum] - 1;
                 haventFound = false;
@@ -71,7 +71,7 @@ int collatz_eval (int i, int j) {
                 count++;
             }
         }
-        //update cache table and largest cycle
+        ///update cache table and largest cycle
         if (k > 0 && k < 1000000){
             cache[k] = count;
         }
