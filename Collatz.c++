@@ -58,11 +58,10 @@ int collatz_eval (int i, int j) {
         bool haventFound = true;
         //keep going until you found cachedValue or get to 1
         while (theNum > 1 && haventFound){
-            assert(theNum > 1);
             //did you find a cached value?
             if(theNum > 0 && theNum < 1000000 && cache[theNum] != 0){
-                count += cache[theNum];
-                haventFound = true;
+                count += cache[theNum] - 1;
+                haventFound = false;
             }
             else if (theNum % 2 == 0){
                 theNum = theNum / 2;
@@ -73,7 +72,9 @@ int collatz_eval (int i, int j) {
             }
         }
         //update cache table and largest cycle
-        cache[theNum] = count;
+        if (k > 0 && k < 1000000){
+            cache[k] = count;
+        }
         if (count > largestCount) {
             largestCount = count;
         }
