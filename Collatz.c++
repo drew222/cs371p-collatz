@@ -37,7 +37,7 @@ int collatz_eval (int i, int j) {
     //no negative values!
     assert (i >= 0);
     assert (j >= 0);
-    int* cache = new int[100000000];
+    int* cache = new int[1000000];
     int count = 1;
     int largestCount = 1;
     int max = j;
@@ -57,9 +57,10 @@ int collatz_eval (int i, int j) {
         int theNum = k;
         bool haventFound = true;
         //keep going until you found cachedValue or get to 1
-        while (theNum != 1 && haventFound){
+        while (theNum > 1 && haventFound){
+            assert(theNum > 1);
             //did you find a cached value?
-            if(theNum > 0 && theNum < 100000000 && cache[theNum] != 0){
+            if(theNum > 0 && theNum < 1000000 && cache[theNum] != 0){
                 count += cache[theNum];
                 haventFound = true;
             }
